@@ -1,0 +1,17 @@
+
+server:
+  port: 9090
+
+spring:
+  application:
+    name: spring-boot-keycloak-security
+
+
+keycloak:
+  realm: employee-service
+  auth-server-url: http://localhost:8180/auth
+  ssl-required: external
+  resource: spring-keycloak-client
+  public-client: true
+  bearer-only: true
+
